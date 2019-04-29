@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git Fetch Ajax Example</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Git Fetch with Ajax Example</h2>
+        </header>
+        <h4>Search for name, repos, followers and more</h4>
+
+        <div class="searchUser"> <!-- Enter Username -->
+            <label for="search">Search: </label>
+            <input id="search1" class="search" type="text" placeholder="Enter User">
+            <input class="btn" id="btn1" type="button" value="Search">
+        </div>
+
+        <div id="invalidUser1" class="invalidUser"></div> <!-- ERROR Message -->
+
+        <div class="foundUser"> <!-- Username is valid -->
+            <div class="column"> 
+                <h5 class="showName" id="showName"></h5>
+                <h5 class="showId" id="showId"></h5>
+                <h5 class="showUrl" id="showUrl"></h5>
+            </div>
+            <div class="column"> 
+                <h5 class="showFollowers" id="showFollowers"></h5>
+                <h5 class="showRepos" id="showRepos"></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>

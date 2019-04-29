@@ -1,0 +1,118 @@
+
+//Media queries//
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$smartphone: "(max-width: 767px)";
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0%;
+}
+
+.container {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("https://opensource.com/sites/default/files/styles/image-full-size/public/lead-images/github-universe.jpg?itok=lwRZddXA");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: aliceblue;
+    height: 100vh;
+
+    header {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 0.1em solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 5px 1px white;
+        
+        h2 {
+            height: fit-content;
+            font-size: 3em;
+            letter-spacing: 1.25px;
+        } 
+    } 
+
+    h4 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 2em;
+    }
+
+    .searchUser {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 60%;
+        margin: 1em auto;
+        font-size: 2em;
+
+        .search {
+            flex: 1 1 auto;
+            color: white;
+            height: 80%;
+            align-self: center;
+            margin: 0 1em;
+            outline: none;
+            border: 0px solid;
+            background: none;
+            border-bottom: 2px solid white;
+            box-shadow: none;
+            font-size: 0.7em;
+        }
+
+        .btn {
+            flex: 0.2 0.2 auto;
+            color: white;
+            outline: none;
+            background: none;
+            border-bottom: 2px solid white;
+            box-shadow: none;
+            font-size: 0.7em;
+            align-self: center;
+        }
+    }
+    
+    .invalidUser {
+        text-align: center;
+        margin-top: -1.5em;
+        font-size: 1.2em;
+    }
+
+    .foundUser {
+        display: flex;
+        width: 90%;
+        flex-flow: column;
+        align-self: center;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 0 auto;
+
+        @media #{$smartphone} {
+            flex-flow: row;
+        }
+
+        .column {
+            display: flex;
+            flex: 0.2 0.2 auto;
+            justify-content: space-between;
+            padding: 3em;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+
+  
